@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WikipediaMOTOAPAR — Главная</title>
+<style>
+/* Стили для WikipediaMOTOAPAR (более темная, "паранормальная" тема) */
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #121212;
+color: #e0e0e0;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+.header {
+background: linear-gradient(90deg, #1a1a2e, #16213e);
+padding: 20px 40px;
+border-bottom: 3px solid #e94560;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header h1 {
+margin: 0;
+font-family: 'Courier New', Courier, monospace;
+color: #e94560;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+}
+.header p { margin: 5px 0 0 0; font-size: 0.9em; color: #a0a0a0; }
+
+.container {
+display: flex;
+max-width: 1400px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Боковая панель */
+.sidebar {
+width: 250px;
+background-color: #1e1e2f;
+border-radius: 8px;
+padding: 20px;
+margin-right: 20px;
+border: 1px solid #333;
+height: fit-content;
+}
+.sidebar h2 {
+font-size: 1.2em;
+color: #e94560;
+border-bottom: 1px solid #333;
+padding-bottom: 10px;
+margin-top: 0;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.sidebar li { margin-bottom: 10px; }
+.sidebar a {
+color: #4cc9f0;
+text-decoration: none;
+transition: color 0.3s;
+}
+.sidebar a:hover { color: #f72585; }
+
+/* Основной контент */
+.main-content {
+flex: 1;
+background-color: #1e1e2f;
+border-radius: 8px;
+padding: 30px;
+border: 1px solid #333;
+}
+.main-content h2 {
+color: #f72585;
+border-bottom: 2px solid #333;
+padding-bottom: 10px;
+}
+.main-content p { margin-bottom: 15px; }
+
+/* Карточки явлений */
+.phenomenon-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 20px;
+margin-top: 20px;
+}
+.phenomenon-card {
+background-color: #2a2a40;
+border: 1px solid #444;
+border-radius: 8px;
+padding: 20px;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+.phenomenon-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
+border-color: #e94560;
+}
+.phenomenon-card h3 {
+margin-top: 0;
+color: #4cc9f0;
+font-size: 1.2em;
+}
+.phenomenon-card .class {
+display: inline-block;
+background-color: #e94560;
+color: white;
+padding: 2px 8px;
+border-radius: 4px;
+font-size: 0.8em;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.phenomenon-card p {
+font-size: 0.9em;
+color: #b0b0b0;
+margin-bottom: 15px;
+}
+.btn {
+display: inline-block;
+background-color: #4cc9f0;
+color: #121212;
+padding: 8px 15px;
+text-decoration: none;
+border-radius: 4px;
+font-weight: bold;
+font-size: 0.9em;
+transition: background 0.3s;
+}
+.btn:hover {
+background-color: #f72585;
+color: white;
+}
+
+/* Предупреждение */
+.alert {
+background-color: rgba(233, 69, 96, 0.1);
+border-left: 4px solid #e94560;
+padding: 15px;
+margin-bottom: 20px;
+font-size: 0.9em;
+}
+.alert strong { color: #e94560; }
+</style>
+</head>
+<body>
+
+<div class="header">
+<div>
+<h1>WikipediaMOTOAPAR</h1>
+<p>База данных вымышленных явлений, аномалий и крипто-событий</p>
+</div>
+<div style="text-align: right;">
+<a href="volga1.html" class="btn" style="background-color: #e94560; color: white;">← Вернуться к «Волге-1»</a>
+</div>
+</div>
+
+<div class="container">
+<!-- Боковая панель -->
+<div class="sidebar">
+<h2>Навигация</h2>
+<ul>
+<li><a href="#">Главная страница</a></li>
+<li><a href="#">Свежие правки</a></li>
+<li><a href="#">Случайная аномалия</a></li>
+<li><a href="#">Сообщество</a></li>
+<li><a href="#">Правила MOTOAPAR</a></li>
+</ul>
+<br>
+<h2>Категории</h2>
+<ul>
+<li><a href="#">Метеорологические аномалии</a></li>
+<li><a href="#">Крипто-зоология</a></li>
+<li><a href="#">Временные петли</a></li>
+<li><a href="#">Техногенные феномены</a></li>
+<li><a href="#">Гравитационные искажения</a></li>
+<li><a href="#">Мифические артефакты</a></li>
+</ul>
+</div>
+
+<!-- Основной контент -->
+<div class="main-content">
+<div class="alert">
+<strong>Внимание:</strong> Вы находитесь в энциклопедии WikipediaMOTOAPAR. Вся информация, представленная здесь, описывает вымышленные, научно-фантастические или необъяснимые явления. Не пытайтесь воспроизвести описанные события в реальности.
+</div>
+
+<h2>Добро пожаловать в WikipediaMOTOAPAR</h2>
+<p><b>WikipediaMOTOAPAR</b> — это специализированная энциклопедия, посвященная документированию вымышленных явлений, аномалий, альтернативных реальностей и необъяснимых феноменов. Наш проект собирает данные о событиях, которые не вписываются в рамки стандартной физики и официальной науки. База данных постоянно пополняется исследователями, очевидцами и просто энтузиастами.</p>
+
+<p>Мы классифицируем явления по уровням угрозы и достоверности. От смертоносных торнадо, таких как <b><a href="volga1.html" style="color:#4cc9f0;">«Волга-1»</a></b>, до мирных, но необъяснимых гравитационных аномалий в лесах Сибири.</p>
+
+<h2>Избранные статьи (Вымышленные явления)</h2>
+<div class="phenomenon-grid">
+
+<!-- Карточка 1 -->
+<div class="phenomenon-card">
+<span class="class">Класс: Разрушитель</span>
+<h3>Торнадо «Волга-1»</h3>
+<p>Аномальный торнадо EF5, существовавший более 13 часов и имевший два пика мощности. Уничтожил несколько городов в Поволжье в 2027 году. Считается сильнейшим метеорологическим вымышленным событием.</p>
+<a href="volga1.html" class="btn">Читать статью</a>
+</div>
+
+<!-- Карточка 2 -->
+<div class="phenomenon-card">
+<span class="class">Класс: Флора</span>
+<h3>Шепчущий лес (Тайга-9)</h3>
+<p>Участок леса в Восточной Сибири, где деревья издают низкочастотный гул, вызывающий галлюцинации. Согласно легендам MOTOAPAR, лес способен «запоминать» людей и создавать их аудио-фантомы.</p>
+<a href="#" class="btn">Читать статью</a>
+</div>
+
+<!-- Карточка 3 -->
+<div class="phenomenon-card">
+<span class="class">Класс: Техно</span>
+<h3>«Мото-Призрак» (Байк-Фантом)</h3>
+<p>Неопознанный мотоцикл, появляющийся на заброшенных трассах в полночь. Исчезает при попытке приблизиться. Согласно базе данных, двигатель работает на неизвестном источнике энергии, не оставляя теплового следа.</p>
+<a href="#" class="btn">Читать статью</a>
+</div>
+
+<!-- Карточка 4 -->
+<div class="phenomenon-card">
+<span class="class">Класс: Время</span>
+<h3>Петля «Кольцо-42»</h3>
+<p>Зона в заброшенном городе, где время циклично повторяется каждые 42 минуты. Жертвы петли не стареют, но теряют память после каждого цикла. Одно из самых изученных временных искажений.</p>
+<a href="#" class="btn">Читать статью</a>
+</div>
+
+<!-- Карточка 5 -->
+<div class="phenomenon-card">
+<span class="class">Класс: Гравитация</span>
+<h3>Летающие камни Плато Устюрт</h3>
+<p>Геологическая аномалия, где камни весом до 50 кг спонтанно поднимаются в воздух на высоту до 10 метров и зависают на несколько часов. Причина — неизвестные магнитные поля.</p>
+<a href="#" class="btn">Читать статью</a>
+</div>
+
+<!-- Карточка 6 -->
+<div class="phenomenon-card">
+<span class="class">Класс: Оптика</span>
+<h3>Город-Мираж «Стеклянный Владимир»</h3>
+<p>Оптическая аномалия в небе над Владимирской областью. В определенные дни на закате в небе проецируется силуэт города, которого не существует на картах. Здания выполнены из неизвестного материала.</p>
+<a href="#" class="btn">Читать статью</a>
+</div>
+
+</div>
+
+<h2>Правила и структура базы</h2>
+<p>Все явления в WikipediaMOTOAPAR классифицируются по <b>Шкале Аномальности (Scale of Anomaly)</b>:</p>
+<ul>
+<li><b>Класс 1 (Безопасные):</b> Явления, не представляющие угрозы. Например, светящиеся грибы.</li>
+<li><b>Класс 2 (Изучаемые):</b> Аномалии с неизвестным потенциалом, требующие наблюдения.</li>
+<li><b>Класс 3 (Опасные):</b> Явления, способные нанести вред здоровью или имуществу.</li>
+<li><b>Класс 4 (Разрушители):</b> События планетарного масштаба или огромной разрушительной силы (например, «Волга-1»).</li>
+<li><b>Класс 5 (Непознанные):</b> Явления, не поддающиеся логическому объяснению и нарушающие законы физики.</li>
+</ul>
+
+<p>Если вы стали свидетелем аномалии, которую нет в базе, пожалуйста, создайте новую статью или свяжитесь с редакцией MOTOAPAR (в вымышленной реальности).</p>
+
+<div style="text-align: center; margin-top: 40px; font-size: 0.8em; color: #666;">
+<p>WikipediaMOTOAPAR © 2026. Создано системой ROCKET. Вымышленный контент.</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
